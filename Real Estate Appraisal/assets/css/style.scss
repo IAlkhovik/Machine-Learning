@@ -1,0 +1,28 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.inner {
+  max-width: 60%;
+}
+
+p img {
+  max-width: initial;
+}
+
+.NNImg {
+  text-align: center;
+}
+
+.copyright {
+  display: none;
+}
+
+.report-header {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-position: under;
+  width: 100%;
+  display: block;
+}
