@@ -1,0 +1,92 @@
+<p align="center"><iframe
+    width="720"
+    height="480"
+    src="https://gtvault.sharepoint.com/:v:/s/CS4641MLTeam/EXkE9ZSiFcBIg6OBEKc9_DIBbOF6IL2zAzOy4qTkBkkyZw"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen
+>
+</iframe></p>
+[https://gtvault.sharepoint.com/:v:/s/CS4641MLTeam/EXkE9ZSiFcBIg6OBEKc9_DIBbOF6IL2zAzOy4qTkBkkyZw](https://gtvault.sharepoint.com/:v:/s/CS4641MLTeam/EXkE9ZSiFcBIg6OBEKc9_DIBbOF6IL2zAzOy4qTkBkkyZw)
+
+
+
+## **_Introduction and Problem Definition_**
+
+
+The objective of this project is to predict the sales price of a house based on a collection of features relating to the physical properties of the house. Traditionally, houses have been appraised on factors such as location, size, and materials [1]. Since estimating the value of a house is currently a mostly manual process that can only be done by a licensed appraiser, there is no guarantee that the house will get valued at what it is worth due to differences between appraisers. In addition, “home prices are up more than 30% over the past couple of years” [2]. A machine learning algorithm could quickly determine what a house should be valued with high accuracy. Home appraisals can cost between $600-$2000, which can be an expensive venture for many homeowners [3]. A machine learning model could provide lower income homeowners with a cheap and fast way to get their home appraised. We hope to increase the accuracy and accessibility of home appraisals.
+
+
+
+## **_Methods_**
+
+
+At first, the datasets will undergo dimensionality reduction. The current dataset contains 79 features that will be matched with the price. Current machine learning models tend to use only a few features like “historical data, unit size, and existing demand” but many more features, like “expected noise level, recreation options, and neighborhood rating” could be utilized for a more accurate estimation [4]. The results will be analyzed to determine which features can be removed or altered without losing prediction quality instead of blindly using each feature. It is likely that instead of having models output a specific price, they will instead output a bracket of price that the house most likely falls into. So, categories could look like 600k-700k, 800k-1M, 1M-1.4M, 1.4M-2M and so on.
+Several supervised models are planned to be tested including a neural network, a random forest, and a support vector machine. Each of these models are popular for predictive data analysis so they seem like a good place to start. In addition, we plan to have one unsupervised model from K-means Clustering, Gaussian Mixture, and DBSCAN models to allow for comparison to the supervised models. To score and determine the best clustering algorithms we will use methods such as silhouette coefficients.
+
+
+
+## **_Potential Results_**
+
+
+ We would like to make a model that can accurately predict the final selling price of a home based on provided features of each home. To test this, we will utilize accuracy score and average precision metrics to determine the quality with which our models evaluate the testing dataset. The performance of the model should be comparable to that of licensed appraiser in order to be preferable to said appraiser. This would mean that the model would need to appraise houses within 2-3% of other appraisals [5] and would need to produce low appraisals less than 8% of the time [6]. We should expect that the number of features is not quite necessary and that PCA reveals the features that have the highest impact on the price. 
+
+
+
+## **_Proposed Timeline_**
+
+
+![Gantt Chart](/assets/ganttChart_cs4641_v2.png)
+
+<img src="https://github.gatech.edu/ctyler31/RealEstateAppraisal/blob/67e36ddcd70926f51cc60964f9bd98a047627213/assets/ganttChart_cs4641_v2.png" width="60%">
+[https://gtvault.sharepoint.com/:x:/s/CS4641MLTeam/EdH8sfsprf5Bpll49tOz1CEBrhzMm3WEoffaCXk48d5Lmg?e=ifMY1G](https://gtvault.sharepoint.com/:x:/s/CS4641MLTeam/EdH8sfsprf5Bpll49tOz1CEBrhzMm3WEoffaCXk48d5Lmg?e=ifMY1G)
+
+
+
+## **_Contributions_**
+
+
+German Ortega:	Formatted Presentation, potential results, Researched datasets and references
+
+
+Sergio Ruiz:	Wrote for potential results, researched datasets, found references
+
+
+Cade Tyler:	Wrote part of intro, made Gantt chart, made GitHub page
+
+
+Gavin Goodler:	Wrote sentences for methods and potential results, researched datasets
+
+
+Ivan Alkhovik:	Wrote for methods, potential results, and intro. Researched references
+
+
+
+
+
+## **_Dataset_**
+
+
+[https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/data](https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/data)
+
+
+
+## **_References_**
+
+
+[1] D. M. Grether and P. Mieszkowski, “Determinants of real estate values,” Journal of Urban Economics, vol. 1, no. 2, pp. 127–145, 1974. 
+
+
+[2] C. Arnold, R. Benincasa, J. GaNun, and H. Chu, “There's a massive housing shortage across the U.S. here's how bad it is Where you live,” NPR, 14-Jul-2022. [Online]. Available: [https://www.npr.org/2022/07/14/1109345201/theres-a-massive-housing-shortage-across-the-u-s-heres-how-bad-it-is-where-you-l](https://www.npr.org/2022/07/14/1109345201/theres-a-massive-housing-shortage-across-the-u-s-heres-how-bad-it-is-where-you-l). [Accessed: 21-Feb-2023]. 
+
+
+[3] H. Kielar, “Home appraisal: Process and cost,” Home Appraisal: Process And Cost Rocket Mortgage. [Online]. Available: [https://www.rocketmortgage.com/learn/home-appraisal](https://www.rocketmortgage.com/learn/home-appraisal). [Accessed: 21-Feb-2023]. 
+
+
+[4] “How machine learning is revolutionizing the real estate sector,” Ai superior, 21-Nov-2022. [Online]. Available: [https://aisuperior.com/blog/how-machine-learning-is-revolutionising-the-real-estate-sector/](https://aisuperior.com/blog/how-machine-learning-is-revolutionising-the-real-estate-sector/). [Accessed: 21-Feb-2023]. 
+
+
+[5] R. Coleman, “How accurate are home appraisals?,” ExcelAppraise, 16-Mar-2021. [Online]. Available: [https://www.excelappraise.com/how-accurate-are-home-appraisals/#:~:text=There's%20an%20acceptable%20variance%20when,10%25%20difference%20may%20be%20acceptable](https://www.excelappraise.com/how-accurate-are-home-appraisals/#:~:text=There's%20an%20acceptable%20variance%20when,10%25%20difference%20may%20be%20acceptable). [Accessed: 24-Feb-2023]. 
+
+
+[6] E. Chang, “How to avoid a low home appraisal,” Bankrate. [Online]. Available: [https://www.bankrate.com/mortgages/how-to-avoid-a-low-home-appraisal/#:~:text=Low%20home%20appraisals%20do%20not,the%20neighborhood%20and%20market%20conditions](https://www.bankrate.com/mortgages/how-to-avoid-a-low-home-appraisal/#:~:text=Low%20home%20appraisals%20do%20not,the%20neighborhood%20and%20market%20conditions). [Accessed: 24-Feb-2023]. 
